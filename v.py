@@ -19,10 +19,10 @@ vegetable_names = {
 st.markdown(
     """
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
     .title-font {
-        font-family: 'Pacifico', cursive;
-        color: #ff6347;
+        font-family: 'Roboto', sans-serif;
+        color: #2c3e50;  /* Dark blue color */
     }
     .stApp {
         background: url('https://www.w3schools.com/w3images/forestbridge.jpg');
