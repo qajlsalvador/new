@@ -26,7 +26,7 @@ st.markdown(
         font-size: 3em;
     }
     .stApp {
-        background: url('https://images.pexels.com/photos/2180885/pexels-photo-2180885.jpeg');
+        background: url('https://www.w3schools.com/w3images/garden.jpg');
         background-size: cover;
     }
     </style>
