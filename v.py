@@ -24,16 +24,19 @@ st.write("The available vegetables are:")
 for idx, veg_name in vegetable_names.items():
     st.write(f"- {veg_name}")
 
-# Sidebar for background color selection
+# Sidebar for background selection
 st.sidebar.title("Customize Background")
-bg_color = st.sidebar.color_picker("Pick A Background Color", "#ffffff")
 
-# Apply the background color
+# Use an online garden background image
+bg_image_url = "https://www.w3schools.com/w3images/forestbridge.jpg"  # Example garden image URL
+
+# Apply the background image
 st.markdown(
     f"""
     <style>
     .stApp {{
-        background-color: {bg_color};
+        background: url({bg_image_url});
+        background-size: cover;
     }}
     </style>
     """,
