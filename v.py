@@ -15,7 +15,7 @@ vegetable_names = {
     4: 'Onion'
 }
 
-# Custom CSS to change the font of the title
+# Custom CSS to change the font of the title and background
 st.markdown(
     """
     <style>
@@ -26,7 +26,7 @@ st.markdown(
         font-size: 3em;
     }
     .stApp {
-        background: url('https://www.w3schools.com/w3images/garden.jpg');
+        background: url('https://images.pexels.com/photos/2180885/pexels-photo-2180885.jpeg');
         background-size: cover;
     }
     </style>
