@@ -22,10 +22,11 @@ st.markdown(
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
     .title-font {
         font-family: 'Roboto', sans-serif;
-        color: #2c3e50;  /* Dark blue color */
+        color: white;
+        font-size: 3em;
     }
     .stApp {
-        background: url('https://www.w3schools.com/w3images/forestbridge.jpg');
+        background: url('https://www.w3schools.com/w3images/garden.jpg');
         background-size: cover;
     }
     </style>
