@@ -15,33 +15,32 @@ vegetable_names = {
     4: 'Onion'
 }
 
-# Title of the app
-st.title('Garden Vegetable Identifier')
+# Custom CSS to change the font of the title
+st.markdown(
+    """
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    .title-font {
+        font-family: 'Pacifico', cursive;
+        color: #ff6347;
+    }
+    .stApp {
+        background: url('https://www.w3schools.com/w3images/forestbridge.jpg');
+        background-size: cover;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# Title of the app with custom font
+st.markdown('<h1 class="title-font">Garden Vegetable Identifier</h1>', unsafe_allow_html=True)
 
 # Write descriptions
 st.write("This tool identifies vegetables commonly found in the Garden.")
 st.write("The available vegetables are:")
 for idx, veg_name in vegetable_names.items():
     st.write(f"- {veg_name}")
-
-# Sidebar for background selection
-st.sidebar.title("Customize Background")
-
-# Use an online garden background image
-bg_image_url = "https://www.w3schools.com/w3images/forestbridge.jpg"  # Example garden image URL
-
-# Apply the background image
-st.markdown(
-    f"""
-    <style>
-    .stApp {{
-        background: url({bg_image_url});
-        background-size: cover;
-    }}
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 
 # File uploader
 uploaded_image = st.file_uploader("Upload an image of a vegetable", type=["jpg", "jpeg", "png"])
