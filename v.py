@@ -26,7 +26,7 @@ st.markdown(
         font-size: 3em;
     }
     .stApp {
-        background: url('https://www.w3schools.com/w3images/garden.jpg');
+        background: url('https://www.w3schools.com/w3images/garden.jpg') no-repeat center center fixed;
         background-size: cover;
     }
     </style>
